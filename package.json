@@ -1,7 +1,6 @@
 {
   "name": "mf-minimal-repro",
   "version": "0.0.0",
-  "type": "module",
   "private": true,
   "devDependencies": {
     "@babel/core": "7.24.7",
@@ -15,7 +14,7 @@
     "webpack-dev-server": "5.0.4"
   },
   "scripts": {
-    "start": "webpack-cli serve",
+    "start": "webpack serve",
     "build": "webpack --mode production",
     "serve": "serve dist -p 3002",
     "clean": "rm -rf dist"
