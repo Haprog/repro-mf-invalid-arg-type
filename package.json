@@ -1,6 +1,7 @@
 {
   "name": "mf-minimal-repro",
   "version": "0.0.0",
+  "type": "module",
   "private": true,
   "devDependencies": {
     "@babel/core": "7.24.7",

@@ -18,8 +18,7 @@
     "baseUrl": ".",
     "paths": {
       "*": ["./@mf-types/*"]
-    },
-    "jsx": "react-jsx"
+    }
   },
   "include": ["src/**/*"]
 }
