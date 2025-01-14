@@ -15,9 +15,9 @@
   },
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack --mode production",
-    "serve": "serve dist -p 3002",
-    "clean": "rm -rf dist"
+    "build": "webpack --mode production --env production",
+    "serve": "serve ./dist -p 3002 --cors",
+    "clean": "rm -rf dist @mf-types"
   },
   "dependencies": {
     "@module-federation/enhanced": "0.8.8"
