@@ -26,8 +26,22 @@ After upgrading to v0.8.6 or later (tested up to 0.8.8) the dev mode breaks with
 pnpm i
 ```
 
-# Running Demo
+# Running the demo
 
-Run `pnpm start`. This will build and serve the module on ports 3002 respectively.
+Run `pnpm start`. This will build and serve the module on port 3002 using Webpack dev server. If using `@module-federation/enhanced@0.8.6` or later you will see the above error and the app will not start.
 
 - [localhost:3002](http://localhost:3002/)
+
+# Upgrading/downgrading Module Federation version
+
+Switch to 0.8.5 (working version):
+
+```bash
+pnpm up @module-federation/enhanced@0.8.5
+```
+
+Switch to 0.8.6 (broken version):
+
+```bash
+pnpm up @module-federation/enhanced@0.8.6
+```
