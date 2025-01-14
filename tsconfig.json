@@ -3,6 +3,7 @@
     "target": "ES2022",
     "module": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "types": [],
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
