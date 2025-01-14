@@ -1,13 +1,8 @@
-import React from 'react';
+export type Size = 'small' | 'large';
 
-type ButtonProps = {
-  size: 'small' | 'large';
-};
-const Button: React.FC<ButtonProps> = ({ size }) => {
+export function createButton(size: Size = 'small') {
   if (size === 'large') {
-    return <button>App2 Large Button</button>;
+    return /* html */ `<button style="font-size: 1.2rem">Large Button</button>`;
   }
-  return <button>App 2 Small Button</button>;
-};
-
-export default Button;
+  return /* html */ `<button>Small Button</button>`;
+}

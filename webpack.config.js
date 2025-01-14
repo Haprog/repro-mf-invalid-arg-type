@@ -31,32 +31,18 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         options: {
-          presets: ['@babel/preset-react', '@babel/preset-typescript'],
+          presets: ['@babel/preset-typescript'],
         },
       },
     ],
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'app2',
+      name: 'repro',
       filename: 'remoteEntry.js',
       exposes: {
         './Button': './src/Button',
       },
-      shared: [
-        {
-          react: {
-            singleton: true,
-            requiredVersion: pkg.dependencies.react,
-          },
-        },
-        {
-          'react-dom': {
-            singleton: true,
-            requiredVersion: pkg.dependencies['react-dom'],
-          },
-        },
-      ],
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',

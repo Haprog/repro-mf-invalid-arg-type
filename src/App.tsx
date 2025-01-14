@@ -1,13 +1,9 @@
-import React from 'react';
+import { createButton } from './Button';
 
-import LocalButton from './Button';
-
-const App = () => (
-  <div>
-    <h1>Typescript</h1>
-    <h2>App 2</h2>
-    <LocalButton size="small" />
-  </div>
-);
-
-export default App;
+export function renderApp(container: HTMLElement) {
+  container.innerHTML = /* html */ `
+    Buttons:<br>
+    ${createButton('small')}<br>
+    ${createButton('large')}
+  `;
+}
