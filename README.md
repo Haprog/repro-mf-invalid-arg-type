@@ -1,4 +1,6 @@
-# Minimal reproduction of a Module Federation issue
+# Minimal reproduction Module Federation issue #3437
+
+This is a minimal reproduction example of issue [module-federation/core#3437](https://github.com/module-federation/core/issues/3437).
 
 When using `@module-federation/enhanced` v0.8.5 everything works fine.
 After upgrading to v0.8.6 or later (tested up to 0.8.8) the dev mode breaks with the following error when trying to run:
