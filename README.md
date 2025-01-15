@@ -1,4 +1,4 @@
-# Minimal reproduction Module Federation issue #3437
+# Minimal reproduction of Module Federation issue #3437
 
 This is a minimal reproduction example of issue [module-federation/core#3437](https://github.com/module-federation/core/issues/3437).
 
